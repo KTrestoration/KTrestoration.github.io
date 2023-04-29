@@ -63,17 +63,30 @@
       $(document).ready(function(){
           $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('display');
           $('table.display').dataTable( {
+            'rowCallback': function(row, data, index){
+                if(data[1] == "Missing"){
+                    $(row).find('td:eq(1)').css('background-color', '#ffadad');
+                }
+                else if(data[1] == "Found (In Discord)"){
+                    $(row).find('td:eq(1)').css('background-color', '#c6f69f');
+                }
+                else if(data[1] == "Test Account Most Likely"){
+                    $(row).find('td:eq(1)').css('background-color', '#fddab3')
+                }
+            },
              oLanguage: {sLengthMenu: "<select>"+
+             "<option value='20'>20</option>"+
             "<option value='100'>100</option>"+
             "<option value='500'>500</option>"+
             "<option value='1000'>1000</option>"+
             "<option value='2500'>2500</option>"+
             "<option value='-1'>All</option>"+
             "</select>"},
-            "iDisplayLength": 500,
+            "iDisplayLength": -1,
             "paging": true,
             "stateSave": true,
-            "searching": true
+            "searching": true,
+
           });
        });
     </script>

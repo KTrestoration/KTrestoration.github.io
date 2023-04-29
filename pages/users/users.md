@@ -1,6 +1,7 @@
 ---
 title: Users
 sidebar: home_sidebar
+hide_sidebar: true
 keywords: users
 permalink: users.html
 toc: true

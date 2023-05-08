@@ -86,7 +86,13 @@
             "paging": true,
             "stateSave": true,
             "searching": true,
-
+            columnDefs: [
+                { targets: 4,
+                  render: function(data) {
+                    return data
+                  }
+                }
+            ]
           });
        });
     </script>

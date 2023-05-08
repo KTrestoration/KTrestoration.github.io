@@ -24,7 +24,9 @@ google_analytics: UA-66296557-1
 host: 127.0.0.1
 # the preview server used. Leave as is.
 
-port: 4000
+# we use this weirdly numbered port since usually the other ports before it
+# are reserved by wsl
+port: 4117
 # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
 
 exclude:

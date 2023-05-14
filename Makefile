@@ -14,4 +14,7 @@ fetch:
 	mv ./_data/newusers.tsv ./_data/users.tsv
 
 fix:
+	jekyll serve --force-polling
+
+fix2:
 	jekyll build

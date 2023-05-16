@@ -6,7 +6,9 @@ topnav:
     - title: GitHub
       external_url: https://github.com/KTrestoration
     - title: Users
-      url: /users
+      url: ..\/users
+    - title: Members
+      url: ..\/members
 
 #Topnav dropdowns
 topnav_dropdowns:

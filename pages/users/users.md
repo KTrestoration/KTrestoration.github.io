@@ -20,7 +20,7 @@ Discord. Please contact me there if you have
 any comments or inquiries.
 
 The latest release version 3.0 means that these
-users were scraped from profile comments sections,
+users were scraped from profile comments sections
 since they did not have their own profile page
 scraped by the WayBack Machine.
 <br/>

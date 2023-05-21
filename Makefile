@@ -1,5 +1,5 @@
 run:
-	bundle exec jekyll serve --trace
+	bundle exec jekyll serve --trace --profile
 
 fetch:
 	rm ./_data/users.tsv
